@@ -8,21 +8,13 @@
 // Ajouter chaque élément au 2ème tableau à partir de l'index donné
 
 function frankenSplice(arr1, arr2, n) {
-    let array1 = [];
-    let array2 = [];
-
-    for (let i = 0; i < arr1.length; i++) {
-        array1.push(arr1[i]);
-    }
-
-    for (let i = 0; i < arr2.length; i++) {
-        array2.push(arr2[i]);
-    }
+    let array1 = arr1.slice(0, arr1.length);
+    let array2 = arr2.slice(0, arr2.length);
 
     for (let i = 0; i < array1.length; i++) {
         array2.splice(n + i, 0, array1[i]);
     }
-    
+
     return array2;
 }
 
