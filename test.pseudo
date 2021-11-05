@@ -1,0 +1,47 @@
+ si variable = 42
+  afficher("C'est la bonne réponse")
+sinon si variable = 1337
+  afficher("Seule l'élite comprendra")
+sinon
+  afficher("C'est une erreur")
+
+selon (variable):
+  1,2,3: afficher("variable vaut 1, 2 ou 3")
+  42: afficher("variable vaut 42")
+defaut: afficher("variable ne vaut ni 1, 2, 3 ou 42")
+
+si variable >= 0 et variable <= 5
+  afficher("variable est comprise entre 0 et 5")
+
+si variable < 5 et non(variable < 0)
+  afficher("variable est strictement inférieure à 5 mais jamais négative")
+
+condition = 42
+tantque (condition = 42)
+  afficher("la condition est vraie")
+  condition = condition + 1
+
+condition = 41
+repeter
+  afficher("la condition est vraie")
+  condition = condition + 1
+tantque (condition = 42)
+
+pour i de 0 a 4
+  afficher(i)
+
+pour i de 0 a 4 par pas de 2
+  afficher(i)
+
+fonction direBonjour(prenom)
+  afficher("bonjour " + prenom)
+
+fonction somme(nombre1, nombre2)
+  resultat = nombre1 + nombre2
+  retourner resultat
+
+lire(age)
+  si age < 18
+    afficher("Vous n'êtes pas majeur")
+  sinon
+    afficher("Vous êtes majeur")
