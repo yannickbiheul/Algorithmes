@@ -1,0 +1,2 @@
+// https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/mutations
+// Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
