@@ -1,10 +1,10 @@
-// Retourner l'index de la valeur minimum d'un tableau
+// Retourner l'index de la valeur maximum d'un tableau
 let array = [18, 1981, 12, -7, 48, 59, 93, 54, -14, 1200, 22, 29, -98, -72, 36];
 
-function findIndexOfMin(arr) {
+function findIndexOfMax(arr) {
     let arrayCopy = arr.slice();
     let isSwapped;
-    let min;
+    let max;
 
     do {
         isSwapped = false;
@@ -19,10 +19,10 @@ function findIndexOfMin(arr) {
         }
     } while(isSwapped);
 
-    min = arr.indexOf(arrayCopy[0]);
+    max = arr.indexOf(arrayCopy[arrayCopy.length - 1]);
 
-    return min;
+    return max;
 
 }
 
-console.log(findIndexOfMin(array));
+console.log(findIndexOfMax(array));
