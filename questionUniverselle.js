@@ -45,4 +45,4 @@ function howMany42(number) {
     return count;
 }
 
-console.log(howMany42(1000000000));
+console.log(howMany42(242824646));
