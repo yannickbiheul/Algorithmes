@@ -3,7 +3,7 @@
 // Compter le nombre d'éléments qui se répètent dans une chaine de caractères
 // Voir la méthode "indexOf" => https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
-function duplicateCount(text) {
+function cleanArray(text) {
     let array = text.toLowerCase().split('');
     let regex = /[a-z]/g;
     let arrayClean = [];
@@ -13,6 +13,12 @@ function duplicateCount(text) {
             arrayClean.push(array[i]);
         }
     }
+
+    return arrayClean;
+}
+
+function duplicateCount(text) {
+    let arrayClean = cleanArray(text);
 
     let arrayDup = [];
 
