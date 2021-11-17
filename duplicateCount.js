@@ -4,26 +4,46 @@
 // Voir la méthode "indexOf" => https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
 function duplicateCount(text) {
-    let result;
+    let array = text.toLowerCase().split('');
+    let regex = /[a-z]/g;
+    let arrayClean = [];
+    
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].match(regex)) {
+            arrayClean.push(array[i]);
+        }
+    }
 
-    return result;
+    let arrayDup = [];
+
+    for (let i = 0; i < arrayClean.length; i++) {
+        // Sélectionner la lettre [i] de arrayClean
+        let index = arrayClean[i];
+
+        // Récupérer les index de cette lettre dans indices
+        let indices = [];
+        let idx = arrayClean.indexOf(index);
+        while (idx != -1) {
+            indices.push(idx);
+            idx = arrayClean.indexOf(index, idx+1);
+        }
+
+        // Si la lettre se répète, supprimer toutes ses occurences dans arrayCopy et incrémenter result
+        if (indices.length > 1) {
+            if (arrayDup.length >= 1) {
+                
+                if (!arrayDup.includes(index)) {
+                    arrayDup.push(index);
+                }
+                
+            } else {
+                arrayDup.push(index);
+            }
+        }
+    }
+
+    return arrayDup.length;
 }
 
-let array = ["a", "b", "c", "d", "a", "b", "c", "d"];
-
-let count = 0;
-for (let i = 0; i < array.length; i++) {
-    let indices = [];
-    let element = array[i];
-    let idx = array.indexOf(element);
-    while (idx != -1) {
-        indices.push(idx);
-        idx = array.indexOf(element, idx + 1);
-    }
-    if (indices.length >= 1) {
-        count++;
-    }
-}
-
-console.log(count);
+console.log(duplicateCount("Indivisibility"));
 
