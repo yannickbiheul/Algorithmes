@@ -17,3 +17,5 @@ echo "<br>";
 echo "<a href='nbYear.php'>nbYear</a>";
 echo "<br>";
 echo "<a href='positiveSum.php'>positiveSum</a>";
+echo "<br>";
+echo "<a href='alphabetPosition.php'>alphabetPosition</a>";
