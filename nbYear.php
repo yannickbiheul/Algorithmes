@@ -36,4 +36,17 @@ function nbYear($p0, $percent, $aug, $p) {
     return $count;
 }
 
-var_dump(nbYear(1000, 2, 50, 1200));
+var_dump(nbYear(1500000, 2.5, 10000, 2000000));
+
+// Best practice
+/*
+function nbYear($p0, $percent, $aug, $p) {
+    $count = 0;
+    while ($p0 < $p) {
+        $p0 *= 1 + $percent / 100;
+        $p0 += $aug;
+        $count++;
+    }
+    return $count;
+}
+*/
