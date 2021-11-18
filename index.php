@@ -15,3 +15,5 @@ echo "<br>";
 echo "<a href='maps.php'>maps</a>";
 echo "<br>";
 echo "<a href='nbYear.php'>nbYear</a>";
+echo "<br>";
+echo "<a href='positiveSum.php'>positiveSum</a>";
