@@ -9,3 +9,5 @@ echo "<br>";
 echo "<a href='dnaStrand.php'>dnaStrand</a>";
 echo "<br>";
 echo "<a href='removeChar.php'>removeChar</a>";
+echo "<br>";
+echo "<a href='repeatStr.php'>repeatStr</a>";
