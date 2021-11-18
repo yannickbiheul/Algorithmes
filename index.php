@@ -13,3 +13,5 @@ echo "<br>";
 echo "<a href='repeatStr.php'>repeatStr</a>";
 echo "<br>";
 echo "<a href='maps.php'>maps</a>";
+echo "<br>";
+echo "<a href='nbYear.php'>nbYear</a>";
