@@ -10,6 +10,8 @@ Un tableau de 0 et de 1 est donné.
 Créer une fonction qui converti la valeur binaire en nombre entier.
 [0, 0, 0, 1] ==> 1
 Les tableaux peuvent avoir différentes longueurs.
+Convertir un nombre binaire en décimal :
+https://fr.wikihow.com/convertir-un-nombre-binaire-en-nombre-d%C3%A9cimal
 */
 
 function binaryToNumber($arr) {
