@@ -25,3 +25,5 @@ echo "<br>";
 echo "<a href='binaryToNumber.php'>binaryToNumber</a>";
 echo "<br>";
 echo "<a href='nbDigit.php'>nbDigit</a>";
+echo "<br>";
+echo "<a href='highAndLow.php'>highAndLow</a>";
