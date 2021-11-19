@@ -21,3 +21,5 @@ echo "<br>";
 echo "<a href='alphabetPosition.php'>alphabetPosition</a>";
 echo "<br>";
 echo "<a href='sequenceSum.php'>sequenceSum</a>";
+echo "<br>";
+echo "<a href='binaryToNumber.php'>binaryToNumber</a>";
