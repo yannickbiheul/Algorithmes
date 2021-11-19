@@ -23,3 +23,5 @@ echo "<br>";
 echo "<a href='sequenceSum.php'>sequenceSum</a>";
 echo "<br>";
 echo "<a href='binaryToNumber.php'>binaryToNumber</a>";
+echo "<br>";
+echo "<a href='nbDigit.php'>nbDigit</a>";
