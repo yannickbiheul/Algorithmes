@@ -19,3 +19,5 @@ echo "<br>";
 echo "<a href='positiveSum.php'>positiveSum</a>";
 echo "<br>";
 echo "<a href='alphabetPosition.php'>alphabetPosition</a>";
+echo "<br>";
+echo "<a href='sequenceSum.php'>sequenceSum</a>";
