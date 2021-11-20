@@ -27,3 +27,5 @@ echo "<br>";
 echo "<a href='nbDigit.php'>nbDigit</a>";
 echo "<br>";
 echo "<a href='highAndLow.php'>highAndLow</a>";
+echo "<br>";
+echo "<a href='xo.php'>xo</a>";
