@@ -17,9 +17,17 @@ Exemples :
 */
 
 function seriesSum($n) {
-    $result = "";
+    $result = 0;
+    // Créer un tableau avec la série de calculs
+    $serie = [1, 1/4, 1/7, 1/10, 1/13, 1/16];
+    // Parcourir le tableau jusqu'au chiffre donné
+    for ($i = 0; $i < $n; $i++) {
+        $result += $serie[$i];
+    }
+    // Arrondir le résultat
+    $result = round($result, $precision = 2);
 
     return $result;
 }
 
-var_dump(seriesSum(1));
+var_dump(seriesSum(4));
