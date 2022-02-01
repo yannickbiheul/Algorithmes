@@ -37,4 +37,32 @@ function afficherEtoiles(nombre) {
     afficherEtoilesDecroissant(nombre - 1);
 }
 
-afficherEtoiles(3);
+// afficherEtoiles(3);
+
+/**
+ * Permet d'afficher plusieurs lignes d'étoiles dans l'ordre croissant impair, de 1 à nombre.
+ * @param {Number} nombre 
+ */
+function afficherEtoilesCroissantImpair(nombre) {
+    let ligne = "";
+    for (let i = 1; i <= nombre; i += 2) {
+        for (let j = 1; j <= i; j++) {
+            ligne += "*";
+        }
+        console.log(ligne);
+        ligne = "";
+    }
+}
+
+function afficherEtoilesDecroissantImpair(nombre) {
+    let ligne = "";
+    for (let i = nombre; i >= 1; i -= 2) {
+        for (let j = nombre; j >= 1; j--) {
+            ligne += "*";
+        }
+        console.log(ligne);
+        ligne = "";
+    }
+}
+
+afficherEtoilesDecroissantImpair(3);
