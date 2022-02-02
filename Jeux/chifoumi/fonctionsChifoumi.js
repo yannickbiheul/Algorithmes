@@ -1,4 +1,3 @@
-
 /**
  * Démarre le jeu et demande au joueur d'enregistrer son pseudo.
  * @returns 
@@ -20,11 +19,20 @@ function choix() {
     return choix;
 }
 
+/**
+ * Retourne le choix du bot.
+ * @returns 
+ */
 function choixDuBot() {
     let random = Math.floor(Math.random() * 3);
     return choixChifoumi[random];
 }
 
+/**
+ * Retourne le résultat de la manche
+ * @param {String} choixDuJoueur 
+ * @returns 
+ */
 function resultats(choixDuJoueur) {
     let choixJoueur = choixDuJoueur;
     let choixBot = choixDuBot();
@@ -75,10 +83,17 @@ function resultats(choixDuJoueur) {
     return resultat;
 }
 
+/**
+ * Affiche les scores.
+ */
 function affichageScore() {
     alert("Score de " + nomDuJoueur + " : " + scoreJoueur + ".\nScore du bot : " + scoreBot + ".");
 }
 
+/**
+ * Retourne si le joueur veut continuer ou non.
+ * @returns 
+ */
 function continuer() {
     let reponse = confirm("Voulez-vous continuer ?");
     return reponse;
