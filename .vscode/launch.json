@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Déboguer",
+            "type": "node",
+            "request": "launch",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${file}"
+        },
+        {
             "name": "Listen for Xdebug",
             "type": "php",
             "request": "launch",
@@ -17,9 +24,7 @@
             "program": "${file}",
             "cwd": "${fileDirname}",
             "port": 0,
-            "runtimeArgs": [
-                "-dxdebug.start_with_request=yes"
-            ],
+            "runtimeArgs": ["-dxdebug.start_with_request=yes"],
             "env": {
                 "XDEBUG_MODE": "debug,develop",
                 "XDEBUG_CONFIG": "client_port=${port}"
