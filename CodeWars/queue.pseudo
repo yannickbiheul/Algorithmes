@@ -1,0 +1,39 @@
+// File d'attente
+[2,5,3,4,6]
+temps: 0
+// Notre ami est en position 3 (index 2), il veut donc 3 tickets.
+// Client 1 prend son ticket, sa valeur 2 est décrémentée, sa nouvelle valeur est 1
+// Il revient à la fin de la file d'attente. temps est incrémenté.
+[5,3,4,6,1]
+temps = 1
+// Client 2 prend son ticket, sa valeur 5 est décrémentée, sa nouvelle valeur est 4
+// Il revient à la fin de la file d'attente. temps est incrémenté
+[3,4,6,1,4]
+temps = 2
+// Client 3 (notre ami) prend son ticket, sa valeur 3 est décrémentée, sa nouvelle valeur est 2
+// Il revient à la fin de la file d'attente. temps est incrémenté
+[4,6,1,4,2]
+temps = 3
+
+// Exemple simple avec position du pote 0
+[2,5,3,6,4]
+temps = 0
+tickets du pote = 2
+[5,3,6,4,1]
+temps = 1
+tickets du pote = 1
+[3,6,4,1,4]
+temps = 2
+tickets du pote = 1
+[6,4,1,4,2]
+temps = 3
+tickets du pote = 1
+[4,1,4,2,5]
+temps = 4
+tickets du pote = 1
+[1,4,2,5,3]
+temps = 5
+tickets du pote = 1
+[4,2,5,3,0]
+temps = 6
+tickets du pote = 0
